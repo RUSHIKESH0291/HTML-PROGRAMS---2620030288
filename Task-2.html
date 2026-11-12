@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Timetable</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        .container {
+            background-color: lightblue;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 110px;
+            height: 110px;
+            background-color: white;
+            border-radius: 20px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            font-weight: bold;
+            color: #b00000;
+        }
+
+        h1 {
+            color: navy;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: navy;
+        }
+
+        a {
+            color: blue;
+            font-size: 20px;
+        }
+
+        table {
+            width: 100%;
+            border: 4px solid black;
+            border-spacing: 2px;
+            background-color: #b0d8e5;
+            margin-top: 15px;
+        }
+
+        th {
+            background-color: yellow;
+            border: 2px solid black;
+            padding: 15px 8px;
+            font-size: 22px;
+        }
+
+        td {
+            background-color: lightblue;
+            border: 2px solid black;
+            padding: 15px 8px;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .day {
+            font-weight: bold;
+        }
+
+        .lunch {
+            background-color: orange;
+            font-weight: bold;
+        }
+
+        @media (max-width: 650px) {
+            th, td {
+                font-size: 14px;
+                padding: 10px 4px;
+            }
+
+            .container {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">
+        KL
+    </div>
+
+    <h1>Student Timetable</h1>
+
+    <a href="https://www.google.com" target="_blank">
+        Visit Google
+    </a>
+
+    <h2>Weekly Timetable</h2>
+
+</div>
+
+<table>
+    <tr>
+        <th>Day</th>
+        <th>Period 1</th>
+        <th>Period 2</th>
+        <th>Period 3</th>
+        <th>Lunch</th>
+        <th>Period 4</th>
+        <th>Period 5</th>
+    </tr>
+
+    <tr>
+        <td class="day">Monday</td>
+        <td>Java</td>
+        <td>HTML</td>
+        <td>CSS</td>
+        <td class="lunch" rowspan="6">Lunch Break</td>
+        <td>DBMS</td>
+        <td>Java Lab</td>
+    </tr>
+
+    <tr>
+        <td class="day">Tuesday</td>
+        <td>CSS</td>
+        <td>Java</td>
+        <td>OS</td>
+        <td>DBMS</td>
+        <td>HTML</td>
+    </tr>
+
+    <tr>
+        <td class="day">Wednesday</td>
+        <td>Java</td>
+        <td>OS</td>
+        <td>HTML</td>
+        <td>CSS</td>
+        <td>Lab</td>
+    </tr>
+
+    <tr>
+        <td class="day">Thursday</td>
+        <td>DBMS</td>
+        <td>Java</td>
+        <td>CSS</td>
+        <td>OS</td>
+        <td>HTML</td>
+    </tr>
+
+    <tr>
+        <td class="day">Friday</td>
+        <td>OS</td>
+        <td>HTML</td>
+        <td>Java</td>
+        <td>Lab</td>
+        <td>DBMS</td>
+    </tr>
+
+    <tr>
+        <td class="day">Saturday</td>
+        <td>HTML</td>
+        <td>CSS</td>
+        <td>DBMS</td>
+        <td>Java</td>
+        <td>Sports</td>
+    </tr>
+
+</table>
+
+</body>
+</html>
